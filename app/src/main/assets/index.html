@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>UpSquare</title>
+</head>
+
+<body>
+    <!--SETTINGS DIV-->
+    <div class="settings hide">
+        <h1>Settings!</h1>
+        <div class="settingContent">
+            <div class="musicSettings">
+                <span class="musicText">MUSIC: 30%</span>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="30" class="slider" id="myRange" draggable="true">
+                </div>
+            </div>
+            <div class="soundSettings">
+                <span class="soundText">SOUND: 30%</span>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="30" class="slider" id="myRange" draggable="true">
+                </div>
+            </div>
+            <div class="settingsButtons">
+                <button class="saveButton">SAVE</button>
+                <button class="backButton">BACK</button>
+            </div>
+        </div>
+    </div>
+    <!--GAME DIV-->
+    <div class="container">
+        <h1>SquareUP!</h1>
+        <span class="scoreContainer">
+            <span class="scoreSpace">HIGHSCORE: </span><span class="highscore">0</span><br>
+            <span>SCORE: </span><span class="score">0</span><br>
+            <span class="instruction">TAP to play!</span>
+        </span>
+        <span class="lose loseText" style="visibility: hidden">GAME OVER!</span>
+        <canvas></canvas><br>
+
+        <span class="powerContainer">
+            <span class="speed">SPEED: 1</span><br>
+            <span class="jump">JUMP POWER: 1</span><br>
+            <span class="size">SIZE: 100%</span><br>
+            <span class="triple">EXTRA JUMPS: 0</span>
+        </span>
+        <span class="icons"></i> <i class="fas fa-pause pauseIcon"></i><i class="fas fa-cog"></i></span>
+
+        <script src="game.js"></script>
+    </div>
+</body>
+
+</html>
